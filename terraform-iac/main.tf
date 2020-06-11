@@ -7,7 +7,7 @@ resource "azurerm_resource_group" "current_ressources_group" {
   location = "${var.current_location}"
   name     = "${var.environment}-rg"
 }
-resource "azurerm_key_vault" "key_vault" {
+resource "azurerm_key_vault" "current_key_vault" {
   name                        = "${var.environment}-keyvault"
   location                    = "${azurerm_resource_group.current_ressources_group.location}"
   resource_group_name         = "${azurerm_resource_group.current_ressources_group.name}"
