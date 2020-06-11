@@ -1,5 +1,6 @@
-location = "__current_location__"
-environment = "__current_environment__"
-application = "__current_application__"
-sql_server_login = "__sql_server_login__"
-sql_server_password = "__sql_server_password__"
+current_location = "__current_location__"
+current_environment = "__current_environment__"
+current_application = "__current_application__"
+current_vnet_address_space = "__current_vnet_address_space__"
+current_subnet_address_prefix = "__current_subnet_address_prefix__"
+
