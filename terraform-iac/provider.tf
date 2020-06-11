@@ -10,7 +10,7 @@ provider "azurerm" {
 terraform {
   required_version = "0.12.24"
   backend "azurerm" {
-    storage_account_name = "srvmdcldiac"
+    storage_account_name = "srvmdcld__current_application__tfsa"
     container_name       = "terraform"
     key                  = "terraform-__current_environment__.tfstate"
     access_key           = "__tf_storage_account_key__"
