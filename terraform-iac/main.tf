@@ -5,10 +5,10 @@ data "azurerm_client_config" "current" {}
 # ======================================================================================
 resource "azurerm_resource_group" "current_ressources_group" {
   location = "${var.current_location}"
-  name     = "${var.environment}-rg"
+  name     = "${var.current_current_environment}-rg"
 }
 resource "azurerm_key_vault" "current_key_vault" {
-  name                        = "${var.environment}-keyvault"
+  name                        = "${var.current_environment}-keyvault"
   location                    = "${azurerm_resource_group.current_ressources_group.location}"
   resource_group_name         = "${azurerm_resource_group.current_ressources_group.name}"
   tenant_id                   = "${data.azurerm_client_config.current.tenant_id}"
