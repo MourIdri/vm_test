@@ -1,15 +1,15 @@
 variable "current_location" {
-  type = "string"
+  type = any
 }
 variable "current_environment" {
-  type = "string"
+  type = any
 }
 variable "current_application" {
-  type = "string"
+  type = any
 }
 variable "current_vnet_address_space" {
-  type = "string"
+  type = any
 }
 variable "current_subnet_address_prefix" {
-  type = "string"
+  type = any
 }
